@@ -55,12 +55,6 @@ Generate visualizations for exploratory data analysis:
 python src/visualizations.py
 
 
-Key Insights
-
-Factors such as [key factors from your EDA] were found to significantly influence churn.
-
-[Any additional insights from the project].
-
 Technologies Used
 
 Python
