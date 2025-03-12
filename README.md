@@ -10,24 +10,21 @@ This project focuses on predicting customer churn using a machine learning model
 - 🤖 **Modeling Techniques:** Various machine learning algorithms applied to build a robust churn prediction model.
 - 📈 **Evaluation Metrics:** Performance measured using Accuracy, Precision, Recall, and F1-score.
 - 📊 **Data Visualization:** Performed Exploratory Data Analysis (EDA) to identify patterns and relationships in the data.
+- 💬 **Chatbot Integration:** An AI chatbot interface for interacting with the churn model.
 
 ---
 
 ## 📂 Project Structure
 ```
-├── Churn_Modeling_Project/
-│   ├── src/
-│   │   ├── preprocessing.py
-│   │   ├── train_model.py
-│   │   ├── evaluate_model.py
-│   │   ├── visualizations.py
-│   ├── data/
-│   │   └── Churn_Modelling.csv
-│   ├── notebooks/
-│   │   └── Churn_Modeling_Experimentation.ipynb
-│   ├── README.md
-│   ├── requirements.txt
-│   └── LICENSE
+├── Churn_Modelling.csv            # Dataset file
+├── FIMIS_Research Paper.docx       # Research Paper related to the project
+├── app.py                          # Main application file (Flask/Backend)
+├── chat.html                       # HTML file for chatbot UI
+├── chatbot.py                      # Chatbot script
+├── fimis_model.py                  # Model training and prediction script
+├── flask_app.py                    # Flask app for serving the model
+├── requirements.txt                # Dependencies list
+├── README.md                       # Project documentation (This file)
 ```
 
 ---
@@ -35,12 +32,12 @@ This project focuses on predicting customer churn using a machine learning model
 ## 🔧 Installation
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/churn-modeling.git
+git clone https://github.com/yourusername/Churn_Modelling.git
 ```
 
 2. **Navigate to the project directory:**
 ```bash
-cd churn-modeling
+cd Churn_Modelling
 ```
 
 3. **Install the required dependencies:**
@@ -52,43 +49,38 @@ pip install -r requirements.txt
 
 ## 📌 Usage
 
-### Data Preprocessing
-Run the preprocessing script to clean and prepare the dataset:
+### Data Preprocessing & Model Training
+Run the model training script to prepare and train the model:
 ```bash
-python src/preprocessing.py
+python fimis_model.py
 ```
 
-### Model Training
-Train the churn prediction model using:
+### Running the Flask App
+Start the Flask application:
 ```bash
-python src/train_model.py
+python flask_app.py
 ```
+The app will run at `http://127.0.0.1:5000/`.
 
-### Evaluation
-Evaluate the trained model:
-```bash
-python src/evaluate_model.py
-```
-
-### Visualizations
-Generate visualizations for exploratory data analysis:
-```bash
-python src/visualizations.py
-```
+### Chatbot Interaction
+To interact with the model via chatbot:
+- Run `chatbot.py` if it's a separate script.
+- Open `chat.html` in your browser if it's served via `flask_app.py`.
 
 ---
 
 ## 🛠️ Technologies Used
 - **Programming Language:** Python
-- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Joblib
-- **Platform:** Google Colab Notebook (For experimentation and training)
+- **Libraries:** Pandas, NumPy, Scikit-learn, Flask, Joblib
+- **Frontend:** HTML (for chatbot interface)
+- **Platform:** Localhost / Google Colab Notebook (For experimentation and training)
 
 ---
 
 ## 💡 Future Work
-- 🔨 Improve feature engineering and hyperparameter tuning.
-- 🌟 Explore advanced machine learning techniques such as ensemble methods and deep learning.
-- 🌐 Deploy the model using Flask or FastAPI for real-time predictions.
+- 🔨 Improve model performance through feature engineering and hyperparameter tuning.
+- 🌟 Integrate more advanced machine learning techniques like ensemble methods or deep learning.
+- 🌐 Enhance chatbot interactions and deploy the model online.
 
 ---
 
